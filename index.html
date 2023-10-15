@@ -4,14 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Article preview component</title>
 </head>
 <body>
+  <main>
+    <div class="article-preview">
+      <img id="article-img" src="./assets/images/drawers.jpg" alt="Picture of a green drawer">
+      <div class="article-details">
+        <h1 id="article-title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p id="article-desc">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+      </div>
+      <div class="article-author">
+        <img id="author-img" src="./assets/images/avatar-michelle.jpg" alt="Profile picture of Michelle Appleton, the author of the article">
+        <div>
+          <h2 id="author-name">Michelle Appleton</h2>
+          <p id="posted-date">28 Jun 2020</p>
+        </div>
+        <button class="btn-share" type="button"><img src="./assets/images/icon-share.svg" alt="Share button"></button>
+      </div>
+      <div class="article-share hidden">
+        <p>SHARE</p>
+        <img src="./assets/images/icon-facebook.svg" alt="Facebook icon">
+        <img src="./assets/images/icon-twitter.svg" alt="Facebook icon">
+        <img src="./assets/images/icon-pinterest.svg" alt="Facebook icon">
+        <button class="btn-share active" type="button"><img id="img-active" src="./assets/images/icon-share.svg" alt="Share button"></button>
+      </div>
+    </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Johnsonsamuel20">Samuel Johnson</a>.
   </div>
-  <script href="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
