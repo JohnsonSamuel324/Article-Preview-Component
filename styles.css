@@ -100,7 +100,7 @@ h1, h2 {
 }
 
 .article-share {
-    background-color: hsl(217, 19%, 35%);
+    background-color: #49556a;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -108,7 +108,7 @@ h1, h2 {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 2.5rem;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     transition: all .25s ease-in-out;
@@ -126,7 +126,8 @@ h1, h2 {
 }
 
 .btn-share.active {
-    margin-right: 3rem;
+    z-index: 1;
+    margin-top: .5rem;
 }
 
 .attribution { 
